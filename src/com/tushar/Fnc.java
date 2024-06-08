@@ -32,7 +32,7 @@ public class Fnc {
 //
 //
 public static void main(String[] args) {
-      int ans =   sum(10,20);
+      int ans =   sum(80,20);
     System.out.println(ans);
 }
 

@@ -20,34 +20,34 @@ package com.tushar;
   */
 public class Casting {
 
-  public static void main(String[] args) {
-   // Automatic Type Conversion
-      // System.out.println("Enter Number : ");
-      // Scanner input = new Scanner(System.in);
-      // int a = input.nextInt();
-      // int b = input.nextInt();   // float c = a + b;
-      // System.out.println(c);
+    public static void main(String[] args) {
+        // Automatic Type Conversion
+        // System.out.println("Enter Number : ");
+        // Scanner input = new Scanner(System.in);
+        // int a = input.nextInt();
+        // int b = input.nextInt();   // float c = a + b;
+        // System.out.println(c);
 
-    // Type Casting
+        // Type Casting
 //  int num =  (int)(74.14f);
 //  System.out.println(num);
 
 
-    // Automatic type promotion in expression
+        // Automatic type promotion in expression
 //
 //    byte a = 40;
 //    byte b = 50;
 //    byte c = 100;
-    // 40 * 50 = 2000 , which can not be stored in a byte.
-    // (byte range is =< 256 ) but it automatically promotes the output into integer
+        // 40 * 50 = 2000 , which can not be stored in a byte.
+        // (byte range is =< 256 ) but it automatically promotes the output into integer
 //    int d = a * b / c; // therefore answer becomes 20 due to automatic promotion during expression
 
-    // eg- 2
-    // Since java follows unicode value
+        // eg- 2
+        // Since java follows unicode value
 //    int num  = 'A'; // letter stored in interger return its unicode value for 'a' = 40 , 'A' = 97
 //    System.out.println(d);
 //    System.out.println(a); // due to this java can print every character and
-    // every value of any language weather its hindi, chinease or any language
+        // every value of any language weather its hindi, chinease or any language
 
  /* Rules for Type Promotion
 
@@ -55,13 +55,14 @@ public class Casting {
   2) If any of the operand( + - * /) is converted in to final value's datatype (ie, long , double, int etc
   */
 // Example to understand Rule of type promotion :-
-       byte b = 42;
-       char c = 'a';
-       short s = 1024;
-      int i = 5000;
-     float f = 50.4f;
-     double d = 0.1234;
-     double r = (b*c) + (c-s) / (f*d);
-    System.out.println(r);
-}
+        byte b = 42;
+        char c = 'a';
+        short s = 1024;
+        int i = 5000;
+        float f = 50.4f;
+        double d = 0.1234;
+        double r = (b * c) + (c - s) / (f * d);
+        System.out.println(r); // since in above all the datatype double has greatest range therefore
+        // the result will be converted into double
+    }
 }
